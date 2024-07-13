@@ -32,14 +32,15 @@ Here is what the first cell looks like:
 6. **Run the First Cell**: After uncommenting the cell, run it to install the required packages. This may take a few minutes.
 
 
-7. **Configure Data Paths**: In the third cell (the configuration cell), change the "_train_file", "_valid_file", and "_test_file" variables to point to the paths of the copied data files in your Google Drive. For example:
+7. **Configure Data Paths**: In the third (configuration) cell, change the "_train_file", "_valid_file", and "_test_file" variables to point to the paths of the copied data files in your Google Drive. For example:
 ```python
 _train_file = '/content/drive/My Drive/path_to_your_data/train_file.csv'
 _valid_file = '/content/drive/My Drive/path_to_your_data/valid_file.csv'
 _test_file = '/content/drive/My Drive/path_to_your_data/test_file.csv'
 ```
 
-8. **Configure Other Variables**: In the second (configuration) cell, change the following variables as needed:
+8. **Configure Other Variables**: In the third (configuration) cell , change the following variables as needed:
+
 ```python
 _device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 _alpha = 0.8
