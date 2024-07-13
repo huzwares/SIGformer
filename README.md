@@ -16,7 +16,6 @@ To use this code in Google Colab, please follow these steps:
 
 
 4. **Mount Google Drive**: In the second cell of the notebook, mount your Google Drive by running:
-
 ```python
 from google.colab import drive
 drive.mount('/content/drive')
@@ -39,3 +38,26 @@ _train_file = '/content/drive/My Drive/path_to_your_data/train_file.csv'
 _valid_file = '/content/drive/My Drive/path_to_your_data/valid_file.csv'
 _test_file = '/content/drive/My Drive/path_to_your_data/test_file.csv'
 ```
+
+8. **Configure Other Variables**: In the second (configuration) cell, change the following variables as needed:
+```python
+_device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+_alpha = 0.8
+_hidden_dim = 64
+_sample_hop = 6
+_eigs_dim = 64
+_model = "eig+path"
+_n_layers = 3
+_learning_rate = 1e-2
+_topks = [5,10,15,20]
+_test_batch_size = 1024
+_lambda_reg = 1e-4
+_beta = 0.2
+_offset = 1
+_show_loss_interval = 1
+_epochs = 1000
+_valid_interval = 20
+_stopping_step = 1
+```
+
+9. **Run the Rest of the Notebook**: Once the dependencies are installed and the data paths and other variables are configured, you can proceed to run the rest of the cells in the notebook
