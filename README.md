@@ -1,6 +1,6 @@
 # jupyter SIGformer 
 
-SIGformer in Jupyter. This repository is a fork of the official Python repository, converted into Jupyter Notebook format to enable interactive coding, documentation, and visualization in an integrated environment.
+SIGformer in Jupyter. This repository is a fork of the official repository, converted into Jupyter Notebook format to enable interactive coding, documentation, and visualization in an integrated environment.
 
 ## Getting Started
 
